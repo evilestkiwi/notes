@@ -1,0 +1,15 @@
+**systemd**
+- all major distros use it
+- giant big fuck off process
+- manages daemons
+- is an init system
+- use `systemctl` to interface with systemd
+	- `systemctl list-units` to see everything systemd manages
+	- `systemctl status []` to see status of a unit
+		- e.g. `cups.service`
+	- `systemctl cat []` to view file
+- `journalctl -u []` to see log for a unit
+	- `-e` to go to end of log
+	- `-f` to follow/tail a log
+	- `-b` to show a specific boot (-1 for last boot)
+- `journalctl -k` to see linux kernel journal
